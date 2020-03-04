@@ -88,6 +88,15 @@ public class PictureTester
     canvas.explore();
   }
   
+  public static void testCopy()
+  {
+    Picture canvas = new Picture("640x480.jpg");
+    Picture flower1 = new Picture("flower1.jpg");
+    Picture flower2 = new Picture("flower2.jpg");
+    canvas.copy(flower1, 0, 100, 0, 100);
+    canvas.explore();
+  }
+  
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
   {
